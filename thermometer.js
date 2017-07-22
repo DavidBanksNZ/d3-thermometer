@@ -3,7 +3,12 @@ var Thermometer = (function(d3) {
 	"use strict";
 
 	function Thermometer(config) {
-		this._config = config || Thermometer.defaults;
+		this._config = {};
+		_extend(this._config, Thermometer.defaults);
+
+		if (config) {
+			_extend(this._config, config);
+		}
 	}
 
 	Thermometer.defaults = {
@@ -378,6 +383,14 @@ var Thermometer = (function(d3) {
 
 	function _exceedsMaxThreshold(value, max, step) {
 		return max - value < 0.66 * step;
+	}
+
+
+	function _extend(baseObj, extendingObj) {
+		var keys = Object.keys(extendingObj);
+		keys.forEach(function(key) {
+			baseObj[key] = extendingObj[key];
+		});
 	}
 
 

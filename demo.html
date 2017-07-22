@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body {
+			padding: 0 1rem;
+			font-family: Arial, Helvetica, sans-serif;
+			max-width: 600px;
+		}
+		pre {
+			padding: 1rem;
+			background: #F4F4F4;
+		}
+		code {
+			color: deeppink;
+		}
+		svg {
+			border: 1px dashed #AAA;
+		}
+	</style>
+</head>
+<body>
+<h1>D3 Thermometer Demo</h1>
+<pre>
+var thermometer = new Thermometer();
+var container = document.getElementById('container');
+thermometer.render(container, 10, 4, 19);
+</pre>
+<p>Open your JS console to experiment with the <code>thermometer</code> instance.</p>
+<div id="container"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+<script src="thermometer.js"></script>
+<script>
+	var thermometer = new Thermometer();
+	var container = document.getElementById('container');
+	thermometer.render(container, 10, 4, 19);
+</script>
+</body>
+</html>
