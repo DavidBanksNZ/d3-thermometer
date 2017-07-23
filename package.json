@@ -6,7 +6,8 @@
   "license": "MIT",
   "repository": "https://github.com/DavidBanksNZ/d3-thermometer",
   "scripts": {
-    "uglify": "uglifyjs thermometer.js --compress --mangle --output thermometer.min.js"
+    "uglify": "uglifyjs thermometer.js --compress --mangle --output thermometer.min.js",
+    "deploy": "node ./deployment/deploy.js"
   },
   "devDependencies": {
     "gh-pages": "^1.0.0",
