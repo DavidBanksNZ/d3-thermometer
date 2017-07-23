@@ -1,6 +1,6 @@
 {
   "name": "d3-thermometer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Small library for creating SVG thermometer graphics ",
   "author": "David Banks <davidgbanks@gmail.com>",
   "license": "MIT",
