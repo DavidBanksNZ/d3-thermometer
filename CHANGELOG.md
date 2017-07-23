@@ -1,3 +1,7 @@
+# 1.0.4
+
+Updated readme
+
 # 1.0.3
 
 Deployed to gh pages
