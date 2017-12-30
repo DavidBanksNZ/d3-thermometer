@@ -165,7 +165,7 @@ var Thermometer = (function(d3) {
 			return domain[0] + v * step;
 		});
 
-		var scale = d3.scale.linear()
+		var scale = d3.scaleLinear()
 			.range([
 				this._dim.bulbCy - this._config.bulbRadius / 2 - 8.5,
 				this._dim.topCy
@@ -184,12 +184,10 @@ var Thermometer = (function(d3) {
 	function _renderAxis() {
 		var className = _createCssClass.call(this, "temperature", "axis");
 
-		var axis = d3.svg.axis()
-			.scale(this._axisData.scale)
-			.innerTickSize(7)
-			.outerTickSize(0)
-			.tickValues(this._axisData.tickValues)
-			.orient("left");
+		var axis = d3.axisLeft(this._axisData.scale)
+			.tickSizeInner(7)
+			.tickSizeOuter(0)
+			.tickValues(this._axisData.tickValues);
 
 		// remove any old axis
 		this._svg

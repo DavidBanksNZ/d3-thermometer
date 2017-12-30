@@ -1,3 +1,7 @@
+# 1.1.0
+
+Update to D3 v4
+
 # 1.0.4
 
 Updated readme
