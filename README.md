@@ -1,6 +1,6 @@
 # D3 Thermometer
 
-A simple library for creating an SVG thermometer graphic using D3.js version 3. Apart from
+A simple library for creating an SVG thermometer graphic using D3.js version 4. Apart from
 D3 there are no other dependencies. Supports IE9 and above.
 
 ### Demo
