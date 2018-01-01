@@ -4,6 +4,7 @@
   "description": "Small library for creating SVG thermometer graphics ",
   "author": "David Banks <davidgbanks@gmail.com>",
   "license": "MIT",
+  "types": "thermometer.d.ts",
   "repository": "https://github.com/DavidBanksNZ/d3-thermometer",
   "scripts": {
     "uglify": "uglifyjs thermometer.js --compress --mangle --output thermometer.min.js",

@@ -73,7 +73,6 @@ var Thermometer = (function(d3) {
 	Thermometer.prototype.setMaxValue = function(value) {
 		this._value.max = value;
 		_update.call(this);
-
 	};
 
 
