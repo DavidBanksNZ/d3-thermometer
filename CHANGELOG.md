@@ -1,3 +1,7 @@
+# 1.2.0
+
+Add typings file for use with typescript
+
 # 1.1.1
 
 Update to D3 v4
